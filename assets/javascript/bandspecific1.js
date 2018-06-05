@@ -100,7 +100,7 @@ var setLyrics = {
         youtubeLink=$("<a>").attr({"target":"_blank","rel":"noreferrer noopener"});
         youtubePlay=$("<img>").attr("src","../Bandifier/assets/images/youtubePlay.png").css({"position":"absolute","height":"20%","width":"25%","left":"38%","top":"45%"});
         youtubeVideo=$("<img>").css("width","100%");
-        youtubeLink.appendTo(".youtube-container")
+        youtubeLink.appendTo(".youtube-container");
         youtubeVideo.appendTo(youtubeLink);
     },
     getTracks: function () {

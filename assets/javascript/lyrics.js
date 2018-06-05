@@ -75,14 +75,12 @@ var setLyrics = {
                     })
                         .then(function (response) {
                             var str = response.message.body.lyrics.lyrics_body;
-                            alert(str);
-                            if(str !=""){
+                            if(str){
                             str = str.substring(0, str.length - "******* This Lyrics is NOT for Commercial use ******* (1409617737497)".length)
                             trackTitle.text(decodeURI(track));
                             lyricsText.text(str);
                             }
                             else{
-                                alert("plau")
                                 lyricsText.text("Protected by Copyright");
                             }
                         })
